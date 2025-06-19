@@ -2,18 +2,15 @@ const textBox = document.getElementById("textBox")
 const listContainer = document.getElementById("list-container")
 
 
-function capitalize(str){
-    return str.charAt(0).toUpperCase + str.slice(1).toLowerCase
-}
 
 function add(){
     const inputValue = textBox.value.trim()
     if(inputValue === ''){
         window.alert('iltimos')
     }else{
-        inputValue.charAt()
+        const capitalizedValue = inputValue.charAt(0).toUpperCase() + inputValue.slice(1).toLowerCase();
         let item = document.createElement("li")
-        item.textContent = inputValue
+        item.textContent = capitalizedValue
         listContainer.appendChild(item)
         let span = document.createElement("span")
         span.textContent = '\u00d7'
